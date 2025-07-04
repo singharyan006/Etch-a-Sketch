@@ -1,0 +1,36 @@
+/* Center the entire page content vertically and horizontally */
+body {
+    display: flex;
+    flex-direction: column;     /* Stack items vertically */
+    align-items: center;        /* Center items horizontally */
+    margin-top: 20px;           /* Add spacing from the top of the page */
+}
+
+/* Style the button */
+button {
+    margin-bottom: 20px;        /* Space between button and the grid */
+    padding: 10px 20px;         /* Inner space for better clickability */
+    font-size: 16px;            /* Make the text readable */
+    cursor: pointer;            /* Show pointer on hover */
+    border-radius: 5rem;        /* Rounded pill-style button */
+}
+
+/* Main grid container */
+.container {
+    display: flex;              /* Use flexbox to lay out child divs */
+    flex-wrap: wrap;            /* Allow squares to wrap into rows */
+    width: 960px;               /* Fixed width for the sketch area */
+    height: 960px;              /* Fixed height to form a square canvas */
+    border: 2px solid #ccc;     /* Light border around the whole grid */
+}
+
+/* Each individual square in the grid */
+.grid-square {
+    box-sizing: border-box;     /* Ensures padding & border don't affect size */
+    border: 2px solid #eee;     /* Light border to define grid cells */
+}
+
+/* Hover effect on each square */
+.grid-square:hover {
+    background-color: rgb(38, 30, 41); /* Dark background when hovered — simulates "drawing" */
+}
